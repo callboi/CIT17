@@ -53,7 +53,12 @@ function calculateInput($userInput){
 				if($action == "%"){
                     $current = $current % $arr[$i];
 				}
+                if($action == "%"){
+                    $current = $current % $arr[$i];
+                }
                 $action = null;
+                if ($action =="%")
+                    $current = $current % $arr[$i];
             }else{
                 if($current == 0){
                     $current = $arr[$i];
